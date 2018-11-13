@@ -1,0 +1,14 @@
+.sidebar{
+     display: flex;
+     padding-top: 70px;
+     flex-direction: column;
+     &__item{
+         padding: 10px;
+         margin-bottom: 30px;
+         border: 2px solid #ecf0f4;
+         
+     }
+     &__form{
+         padding: 60px 0;
+     }
+}

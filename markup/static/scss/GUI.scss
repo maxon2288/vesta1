@@ -1,0 +1,391 @@
+.wrapper{
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+h1, .m-title-1{
+    font-size: 36px;
+    font-family: "Raleway";
+    color: rgb(31, 41, 66);
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 30px;
+}
+h1, .m-title-1-light{
+    font-size: 36px;
+    font-family: "Raleway";
+    color: rgb(31, 41, 66);
+    font-weight: 500;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+h2, .m-title-2{
+    font-size: 24px;
+    font-family: "Raleway";
+    color: rgb(31, 41, 66);
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+    margin-top: 45px;   
+    margin-bottom: 20px;
+}
+h5, .m-title-5{
+    font-size: 18px;
+    font-family: "Raleway";
+    color: rgb(31, 41, 66);
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+    margin-top: 45px;   
+    margin-bottom: 10px;
+}
+
+p, .m-desc{
+    margin: 0;
+    font-size: 16px;
+    font-family: "Raleway";
+    color: rgb(67, 67, 67);
+    font-weight: 500;
+    line-height: 23px;
+    vertical-align: top;
+}
+
+b, .m-bold{
+    margin: 0;
+    font-size: 16px;
+    font-family: "Raleway";
+    color: $dark;
+    font-weight: 700;
+    line-height: 23px;
+    vertical-align: top;
+}
+
+.m-field{
+	border-width: 2px;
+    border-color: rgb(236, 240, 244);
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100px;
+    margin-bottom: 10px;
+    max-width: 300px;
+    width: 100%;
+    padding-left: 25px;
+    height: 50px;
+    transition: 0.3s;
+    font-family: 'raleway';
+    font-weight: 700;
+    color: #a2a1a1;
+    letter-spacing: 1px;
+    font-size: 12px;
+    background-position: 20px 15px;
+    background-repeat: no-repeat;
+    &.field-phone{
+        background-image: url('../../static/img/content/placeholder.png');
+        padding-left: 50px;
+    }
+    &.field-mail{
+        background-image: url('../../static/img/content/placeholder-mail.png');
+        padding-left: 50px;
+    }
+	&:focus{
+		border-color: #c6c9cc;
+		&::placeholder{
+            transform: translateY(-15px);
+            opacity: 0;
+            
+		}
+	}
+	&::placeholder{
+        transition: 0.3s;
+        font-size: 12px;
+        color: #a2a1a1;
+        text-transform: uppercase;
+        font-size: 12px;
+	}
+	&:hover{
+		border-color: #dde0e4;
+	}
+	&:hover:focus{
+		border-color: #c6c9cc;
+	}
+}
+
+.error{
+	bottom: 2px solid red;
+	&:focus{
+		border-color: red;
+	}
+	&:hover{
+		border-color: #dde0e4;
+	}
+	&:hover:focus{
+		border-color: red;
+	}
+}
+.valid{
+	bottom: 2px solid green;
+	&:focus{
+		border-color: green;
+	}
+	&:hover{
+		border-color: #dde0e4;
+	}
+	&:hover:focus{
+		border-color: green;
+	}
+}
+
+
+.html{
+    img{
+        margin-bottom: 30px;
+    }
+    p{
+        margin-bottom: 25px;
+    }
+    a{
+        color: $blue;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    h3{
+        font-size: 24px;
+        color: $blue;
+        font-weight: bold;
+        margin: 0;
+        margin-top: 25px;
+        display: flex;
+    }
+    h2{
+        font-size: 24px;
+        font-family: "Raleway";
+        color: rgb(31, 41, 66);
+        font-weight: bold;
+        text-align: left;
+        margin: 0;
+        margin-top: 45px;   
+        margin-bottom: 20px;
+    }
+
+    ul{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding-left: 20px;
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 25px;
+        li{
+            margin: 0;
+            font-size: 16px;
+            font-family: "Raleway";
+            color: rgb(76, 76, 76);
+            font-weight: 500;
+            margin-bottom: 20px;
+            position: relative;
+            &:before{
+                content: '';
+                position: absolute;
+                top: 5px;
+                left: -20px;
+                width: 7px;
+                height: 7px;
+                background-color: $blue;
+                border-radius: 50%;
+            }
+        }
+        ul{
+            li{
+                &:before{
+                    border-radius: 0px;
+                }
+            }
+        }
+    }
+    
+}
+.main-table-container{
+    overflow: auto;
+    max-width: 100%;
+    width: 100%;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    table{
+        max-width: 99.99%;
+        width: 100%;
+        box-sizing: border-box;
+        border-collapse: collapse;
+    }
+    tr {
+        box-sizing: border-box;
+        &:nth-child(2){
+            td{
+                border-top: none;
+            }
+        }
+        &:nth-child(odd){
+            background: $light;
+        }
+    }
+    td,th{
+        padding: 5px 30px;
+        text-align: left;
+        box-sizing: border-box;
+        height: 55px;
+    }
+    th{
+        background-color: $blue;
+        border-right: 2px solid #1c4285;
+        color: #fff;
+        &:last-child{
+            border: none;
+        }
+    }
+    td{
+        text-align: left;     
+        font-size: 16px;
+        font-family: "Raleway";
+        color: rgb(67, 67, 67);
+        font-weight: bold;
+        border: 2px solid #ecf0f4;
+    }
+
+    
+}
+
+.m-button{
+    background-color: $blue;
+    border-radius: 100px;
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+    padding-left: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    height: 55px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'raleway';
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+    position: relative;
+    display: flex;
+    box-shadow: $shadow;
+    font-size: 12px;
+    align-items: center;
+    padding-right: 25px;
+    justify-content: center;
+    border: none;
+    &:before{
+        content: '';
+        position: absolute;
+        right: 0;
+        background: url('../../static/img/content/button.png') no-repeat center;
+        top: 50%;
+        background-color: $red;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        transform: translate(40%, -50%);
+        box-shadow: 0px 0px 6.58px 0.42px rgba(112, 112, 112, 0.4);
+        transition: 0.3s;
+    }
+    &:hover{
+        background-color: $button-bg-hover;
+        &:before{
+            transform: translate(60%, -50%);
+        }
+
+    }
+}
+
+.nice-select{
+    width: 290px;
+    padding: 0;
+    padding-left: 15px;
+    height: 50px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border: 2px solid #e8e8e8;
+    border-radius: 200px;
+    padding-left: 55px;
+    font-size: 12px;
+    font-family: "Raleway";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    text-transform: uppercase;
+    background-image: url('../../static/img/content/placeholder-mark.png');
+    background-repeat: no-repeat;
+    background-position: 25px 12px;
+    &:after{
+        border-color: #214c99;
+        border-width: 2px;
+        height: 7px;
+        width: 7px;
+        top: 22px;
+        right: 25px;
+        transform-origin: 66% 66%;
+    }
+    .list{
+        width: 100%;
+        li{
+            &:before{
+                display: none;
+            }
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: 500;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+    }
+    .option{
+        box-sizing: border-box;
+        padding: 0;
+        padding-left: 15px;
+        width: 100%;
+        height: 10px;
+    }
+}
+
+.swiper-container{
+    position: relative;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    position: absolute;
+    background: url('../../static/img/content/button.png') no-repeat 50% 50%;
+    background-color: $red;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 6.58px 0.42px rgba(112, 112, 112, 0.4);
+    transition: 0.3s;
+    bottom: -55px !important;
+    right: 0;
+    z-index: 1000;
+    opacity: 1;
+}
+
+.swiper-button-prev{
+    right: 50px;
+    transform: rotate(180deg);
+}
+.swiper-button-disabled{
+    opacity: 1 !important;
+}

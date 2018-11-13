@@ -1,0 +1,22 @@
+.bread{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Raleway";
+    color: rgb(159, 160, 161);
+    margin-bottom: 10px;
+    span{
+        a {
+            text-decoration: none;  
+            font-size: 14px;
+            font-family: "Raleway";
+            font-weight: 500;
+            color: #646464;    
+            span{
+                
+            }
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
