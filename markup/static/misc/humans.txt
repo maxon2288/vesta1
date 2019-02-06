@@ -1,13 +1,24 @@
-# humanstxt.org/
 # The humans responsible & technologies
+    
+# Made with love ♡
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    # Markello team 
+
+    # -----------------
+
+    http://markello.ru  
+
+            ↑
+
+    Our company site
+    
+    # -----------------
 
 # THANKS
 
-    <name>
+    # Maxim Sinukov (frontender) ♛
 
 # TECHNOLOGIES
 

@@ -1,39 +1,14 @@
 <!doctype html>
 <html class="no-js" lang="ru">
+<head>
+    {{> head/head head.defaults}}
+</head>
+<body class="page" style="visibility: hidden;opacity: 0;">
+    %=symbols=%
+    
 
-    <head>
-        {{> head/head head.defaults}}
-    </head>
-
-    <body class="page">
-        %=symbols=%
-
-        {{> header/header}}
-
-        <div class="wrapper main">
-            
-            <div class="main__left">
-                <div class="html">
-                    {{> bread/bread}}
-
-                    <h1>Равным образом реализация намеченных </h1>
-
-                    
-                </div>
-            </div>
-
-            <div class="main__right">
-                <div class="sidebar m-desc stick">
-                    {{> sidebar/form}}
-                    <!-- {{> sidebar/news}} -->
-                </div>
-            </div>
-            
-        </div>
-
-
-       
-        {{> footer/footer}}
-    </body>
-
+    {{> popup/popup}}
+    {{> scripts/scripts}}
+    
+</body>
 </html>
